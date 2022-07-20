@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://stocksnap.io/"
+            android:layout_weight="6"
+            />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="FETCH"/>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/progressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Key in website URL and Start Downloading images!"
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:textColor="#f5580f"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/next_page_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Start Game" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
